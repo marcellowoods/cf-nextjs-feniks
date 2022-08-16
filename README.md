@@ -1,8 +1,8 @@
 # pk-feniks.com
 
-This is for cloudflare pages
-yarn build
-than just place the out folder in cf 
+This is for cloudflare pages  
+yarn build  
+than just put the out folder in cf   
 
 ## Redirects
 
