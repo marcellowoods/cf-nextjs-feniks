@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url(//db.onlinewebfonts.com/c/e5c490a944bc2b2746f0c851501e46c7?family=AvenirNextW10-Bold); */
+
+
+html,
+/* body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #000000;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Junegull-Regular', arial; */
+
+    /* text-shadow: 4px 4px 4px #aaa; */
+    background-color: #000000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.g327 {
+    border-color: #302f30;
+}
+
+/* font */
+
+/* https://google-webfonts-helper.herokuapp.com/ */
+
+/* https://stackoverflow.com/questions/60854215/tailwind-use-font-from-local-files-globally */
+/* https://fonts.google.com/specimen/Comfortaa?subset=cyrillic */
+/* comfortaa-300 - latin_cyrillic */
+@font-face {
+    font-family: 'comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('../fonts/comfortaa-v40-latin_cyrillic-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/comfortaa-v40-latin_cyrillic-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* comfortaa-regular - latin_cyrillic */
+@font-face {
+    font-family: 'comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/comfortaa-v40-latin_cyrillic-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/comfortaa-v40-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* comfortaa-500 - latin_cyrillic */
+@font-face {
+    font-family: 'comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/comfortaa-v40-latin_cyrillic-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/comfortaa-v40-latin_cyrillic-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* comfortaa-600 - latin_cyrillic */
+@font-face {
+    font-family: 'comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/comfortaa-v40-latin_cyrillic-600.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/comfortaa-v40-latin_cyrillic-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* comfortaa-700 - latin_cyrillic */
+@font-face {
+    font-family: 'comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/comfortaa-v40-latin_cyrillic-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/comfortaa-v40-latin_cyrillic-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* logo font */
+@font-face {
+    font-family: 'Train One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/train-one-v13-latin_cyrillic-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/train-one-v13-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/train-one-v13-latin_cyrillic-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/train-one-v13-latin_cyrillic-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/train-one-v13-latin_cyrillic-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/train-one-v13-latin_cyrillic-regular.svg#TrainOne') format('svg');
+    /* Legacy iOS */
+}
+
+.grr {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.txg {
+    color: #b8bcbf;
+}
+
+.ld-04 {
+    letter-spacing: 0.025em;
+}
+
+.lh-6 {
+    line-height: 1.08;
+}
+
+.text-80 {
+    font-size: 80px;
+}
+
+.tr04 {
+    transition: 0.4s;
+}
+
+.clearNavTop {
+    /* backdrop-filter: saturate(100%) blur(1px) !important; */
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.clearNav {
+    /* backdrop-filter: saturate(180%) blur(5px) !important; */
+    background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.fsac4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 32px;
+}
+
+@media (min-width: 720px) {
+    .fsac4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* .ktq4 {
+    background-color: #101111;
+    padding: 2rem;
+    border-radius: 10px;
+} */
+
+.ktq4 {
+    /* background-color: #101111; */
+    padding: 2rem;
+    border-radius: 10px;
+    /* backdrop-filter: saturate(180%) blur(5px) !important; */
+    background-color: rgba(26, 29, 29, 0.85) !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Header Sticky */
+.sticky-header .inner-border.border-b {
+    border-bottom: none;
+}
+
+.sticky-header .menu-item>a {
+    @apply p-[35px_0];
+}
+
+/* mobile menu */
+.mobile-menu-open {
+    @apply visible opacity-100;
+}
+
+.mobile-menu-open .OffCanvasContent {
+    @apply visible opacity-70;
+}
+
+.mobile-menu-open .site-mobile-menu {
+    @apply translate-x-0;
+}
+
+
+/* https://gradienta.io/ */
+/* https://gradienta.io/purple-darkteal */
+/* https://gradienta.io/crossroads */
+/* https://gradienta.io/rising-emotion */
+/* https://codepen.io/P1N2O/pen/pyBNzX */
+/* https://csshint.com/animated-gradient-examples/ */
+.pages-gradient {
+    background: radial-gradient(111% 111% at 74.29% -11%, #A93300 0%, #005570 100%), linear-gradient(127.43deg, #00D5C8 0%, #2200AA 100%);
+    background-blend-mode: difference, normal;
+}
+
+
+/* react-player */
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    /* 720 / 1280 = 0.5625 */
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.react-player-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.logo-text {
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: -0.19em;
+    background-size: 300%;
+    background-position: -100%;
+
+    animation: animatedText 8s infinite alternate-reverse;
+}
+
+.landing-page-text {
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, #00F260, #f79d00, #0575E6, #64f38c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    background-position: -100%;
+
+    animation: animatedText 8s infinite alternate-reverse;
+}
+
+@keyframes animatedText {
+    to {
+        background-position: 100%;
+    }
+}
+
+
+
+.nav-dropdown-border {
+    /* width: 300px;
+    height: 200px; */
+    border-top: 2px solid rgb(164, 0, 201);
+    animation: bropDownBorderAnimation 4s infinite;
+}
+
+@keyframes bropDownBorderAnimation {
+    50% {
+        border-color: rgb(98, 255, 0);
+    }
+}
+

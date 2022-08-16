@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pk-feniks.com
+
+# Sitemaps
+Sitemap: https://pk-feniks.com/sitemap.xml
