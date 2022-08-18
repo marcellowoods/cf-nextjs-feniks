@@ -3,6 +3,7 @@
 This is for cloudflare pages  
 yarn build  
 than just put the out folder in cf   
+*run yarn build two times for sitemap to be updated  
 
 ## Redirects
 changing the domain name  
