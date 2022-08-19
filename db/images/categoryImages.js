@@ -4,7 +4,7 @@ import CATEGORY_TYPES from "../CategoryTypes";
 
 const kinoImagesNum = 3;
 const koncertiImagesNum = 10;
-const lazeriImagesNum = 8;
+const lazeriImagesNum = 9;
 
 
 const kinoImages = createImageArray(kinoImagesNum, categoryImagesLocation.kino);
