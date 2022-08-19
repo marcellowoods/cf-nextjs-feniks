@@ -1,13 +1,10 @@
 import { galleryImagesLocation } from "./imageLocations";
 
+import createImageArray from "./createImageArray";
+
 const galleryImagesNum = 12;
 
-const galleryImages = Array.from({length: galleryImagesNum}, (_, i) => {
-
-    const curImg = i + 1;
-    return galleryImagesLocation + curImg + ".jpg"
-
-}).reverse();
+const galleryImages = createImageArray(galleryImagesNum, galleryImagesLocation);
 
 export default galleryImages;
 
