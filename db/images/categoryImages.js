@@ -2,9 +2,9 @@ import { categoryImagesLocation } from "./imageLocations";
 import createImageArray from "./createImageArray";
 import CATEGORY_TYPES from "../CategoryTypes";
 
-const kinoImagesNum = 3;
-const koncertiImagesNum = 10;
-const lazeriImagesNum = 9;
+const kinoImagesNum = 5;
+const koncertiImagesNum = 17;
+const lazeriImagesNum = 11;
 
 
 const kinoImages = createImageArray(kinoImagesNum, categoryImagesLocation.kino);

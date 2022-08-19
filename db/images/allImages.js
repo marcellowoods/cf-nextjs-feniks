@@ -1,4 +1,3 @@
-import galleryImages from "./galleryImages";
 import categoryImages from "./categoryImages";
 import chronologicalEvents from "../events/past/chronologicalEvents";
 import CATEGORY_TYPES from "../CategoryTypes.js"
@@ -14,7 +13,6 @@ const allImages = [
     ...categoryImages[CATEGORY_TYPES.kino],
     ...categoryImages[CATEGORY_TYPES.lazeri],
     ...categoryImages[CATEGORY_TYPES.koncerti],
-    ...galleryImages
 ];
 
 export default allImages;
