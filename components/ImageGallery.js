@@ -48,8 +48,10 @@ const ImageGallery = ({ images }) => {
 
             {imgNum < images.length &&
                 (
-                    <div className="pt-8 flex flex-col items-center">
-                        <button className="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-500 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" onClick={handleClick}>покажи още</button>
+                    <div className="flex flex-col items-center">
+                        <button className="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-500 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" onClick={handleClick}>
+                            покажи още снимки
+                        </button>
                     </div>
                 )
             }

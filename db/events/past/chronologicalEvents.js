@@ -1,6 +1,17 @@
 const pastEventImageLocation = "/static/images/events/past/";
 import CATEGORY_TYPES from "../../CategoryTypes";
 
+const createImageArray = (imgsLength, imgsLocation) => {
+
+    const images = Array.from({ length: imgsLength }, (_, i) => {
+        const curImg = i + 1;
+        return imgsLocation + curImg + ".jpg"
+
+    }).reverse();
+
+    return images;
+}
+
 
 const chronologicalEvents = [
     {
@@ -48,14 +59,7 @@ const chronologicalEvents = [
         location: "гр. Брегово",
         date: { year: 2022, month: 8, day: 13 },
         description: "Деси Слава, Глория и атрактивно лазерно шоу.",
-        images: [
-            pastEventImageLocation + "/2022-8-13/" + "1" + ".jpg",
-            pastEventImageLocation + "/2022-8-13/" + "3" + ".jpg",
-            pastEventImageLocation + "/2022-8-13/" + "4" + ".jpg",
-            pastEventImageLocation + "/2022-8-13/" + "5" + ".jpg",
-            pastEventImageLocation + "/2022-8-13/" + "9" + ".jpg",
-            pastEventImageLocation + "/2022-8-13/" + "11" + ".jpg",
-        ],
+        images: createImageArray(11, pastEventImageLocation + "/2022-8-13/"),
         categoryImages: {
             [CATEGORY_TYPES.lazeri]: [
                 pastEventImageLocation + "2022-8-13/9.jpg",
@@ -70,8 +74,11 @@ const chronologicalEvents = [
             ]
         },
         videos: [
-            "https://www.facebook.com/1994175757577191/videos/1074944199810725",
-            "https://www.facebook.com/1994175757577191/videos/733114741127835"
+            "https://www.youtube.com/watch?v=iYqoDpUEsnw",
+            "https://www.youtube.com/watch?v=ye2pne5k9sc",
+            "https://www.youtube.com/watch?v=gbdYIsYonK0",
+            "https://www.youtube.com/watch?v=Nb88kPeSeCE",
+            "https://www.youtube.com/watch?v=oCPrOaZvV6U"
 
         ]
     },

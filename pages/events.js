@@ -34,7 +34,7 @@ const Events = () => {
                 </h1>
             </div>
 
-            <div className="pb-16 sm:pt-4">
+            <div className="pb-2 sm:pt-4">
 
                 {futureEvents.length ? (
                     <div className="pt-4 pb-16 space-y-12 max-w-2xl mx-auto">
@@ -64,7 +64,9 @@ const Events = () => {
                     {postNum < pastEvents.length &&
                         (
                             <div className="flex flex-col items-center">
-                                <button className="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-500 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" onClick={handleClick}>покажи още</button>
+                                <button className="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-500 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" onClick={handleClick}>
+                                    покажи още събития
+                                </button>
                             </div>
                         )
                     }
