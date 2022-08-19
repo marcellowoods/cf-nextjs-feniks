@@ -145,7 +145,7 @@ export default function Footer() {
                             <div
                                 target="_blank"
 
-                                className="text-md whitespace-pre text-white hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+                                className="text-base whitespace-pre text-white hover:text-white transition-colors duration-300 font-semibold"
                             >
                                 088 771 3207  -  Тихомир Горанов
                             </div>
@@ -155,7 +155,7 @@ export default function Footer() {
                             <a
                                 target="_blank"
                                 href="https://www.facebook.com/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D1%86%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B0-%D0%BA%D1%8A%D1%89%D0%B0-%D0%A4%D0%B5%D0%BD%D0%B8%D0%BA%D1%81-1994175757577191/"
-                                className="underline text-md text-white hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+                                className="underline text-base text-white hover:text-white transition-colors duration-300 font-semibold"
                             >
                                 facebook
 
