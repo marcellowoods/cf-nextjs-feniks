@@ -34,7 +34,7 @@ const Events = () => {
                 </h1>
             </div>
 
-            <div className="pb-16">
+            <div className="pb-16 sm:pt-4">
 
                 {futureEvents.length ? (
                     <div className="pt-4 pb-16 space-y-12 max-w-2xl mx-auto">

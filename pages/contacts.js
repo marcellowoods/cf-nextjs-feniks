@@ -21,12 +21,12 @@ const Gallery = () => {
                                     За връзки с нас
                                 </h1>
                                 {/* bg-opacity-70 bg-black */}
-                                <div className="bg-opacity-70 bg-black rounded-lg py-8">
+                                <div className="bg-opacity-70 bg-black whitespace-pre rounded-lg py-8">
                                     <h1 className="mb-2 text-lg sm:text-2xl font-semibold text-white">
-                                        0887713207 - Тихомир Горанов
+                                        088 771 3207  -  Тихомир Горанов
                                     </h1>
                                     <h1 className="mb-9 text-lg sm:text-2xl font-semibold text-white">
-                                        0886683789 - Агнес Първанова
+                                        088 668 3789  -  Агнес Първанова
                                     </h1>
 
                                     <h1 className="mb-9 text-lg sm:text-2xl font-semibold text-white">

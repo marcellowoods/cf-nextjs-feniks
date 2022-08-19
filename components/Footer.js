@@ -145,9 +145,9 @@ export default function Footer() {
                             <div
                                 target="_blank"
 
-                                className="text-md text-white hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+                                className="text-md whitespace-pre text-white hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
                             >
-                                0887713207 - Тихомир Горанов
+                                088 771 3207  -  Тихомир Горанов
                             </div>
                         </li>
 

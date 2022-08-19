@@ -1,10 +1,10 @@
 import { categoryImagesLocation } from "./imageLocations";
 import createImageArray from "./createImageArray";
+import CATEGORY_TYPES from "../CategoryTypes";
 
 const kinoImagesNum = 3;
 const koncertiImagesNum = 10;
 const lazeriImagesNum = 8;
-
 
 
 const kinoImages = createImageArray(kinoImagesNum, categoryImagesLocation.kino);
@@ -14,11 +14,11 @@ const lazeriImages = createImageArray(lazeriImagesNum, categoryImagesLocation.la
 
 const categoryImages = {
 
-    "kino": kinoImages,
+    [CATEGORY_TYPES.kino]: kinoImages,
 
-    "lazeri": lazeriImages,
+    [CATEGORY_TYPES.lazeri]: lazeriImages,
 
-    "koncerti": koncertiImages
+    [CATEGORY_TYPES.koncerti]: koncertiImages
 }
 
 export default categoryImages;
