@@ -17,7 +17,9 @@ const categoryImagesLocation = {
 export {
 
     imagesLocation,
+
     galleryImagesLocation,
+    
     categoriesImagesLocation,
     sliderImagesLocation,
     categoryImagesLocation
