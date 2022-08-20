@@ -1,6 +1,4 @@
 import React from 'react'
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css';
 import ImageGallery from '../components/ImageGallery';
 import { categoryImages } from '../constants';
 import PagesLayout from '../components/PagesLayout';
@@ -8,14 +6,14 @@ import Meta from '../components/Meta';
 
 
 //for newline add whitespace-pre-line and use inside text {"\n"} 
-const Gallery = () => {
+const Koncerti = () => {
     return (
         <PagesLayout>
 
             <Meta title={"организира на концерти"} description={"организира концерти на открито и закрито по повод различни събития"} />
 
-            <div className="px-4 pb-12 sm:pt-4 sm:pb-20 sm:px-0 text-gray-600 body-font max-w-5xl mx-auto">
-                <h1 className="text-xl sm:text-4xl text-center lh-6 ld-04 font-bold text-white">
+            <div className="px-4 pb-10 sm:pt-4 sm:pb-20 sm:px-0 text-gray-600 body-font max-w-5xl mx-auto">
+                <h1 className="text-lg sm:text-4xl text-center lh-6 ld-04 font-bold text-white">
                     ОРГАНИЗИРАНЕ НА КОНЦЕРТИ
                 </h1>
             </div>
@@ -54,4 +52,4 @@ const Gallery = () => {
     );
 }
 
-export default Gallery;
+export default Koncerti;

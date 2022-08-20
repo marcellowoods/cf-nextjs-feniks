@@ -1,10 +1,9 @@
 import React from 'react'
 import PagesLayout from '../components/PagesLayout';
-import 'react-medium-image-zoom/dist/styles.css';
 import ImageGallery from '../components/ImageGallery';
 import { categoryImages, categoryVideos } from '../constants';
 import Meta from '../components/Meta';
-import VideoGallery from '../components/VideoGallery';
+// import VideoGallery from '../components/VideoGallery';
 
 
 const Gallery = () => {
@@ -14,13 +13,13 @@ const Gallery = () => {
             
             <Meta title={"пътуващо кино"} description={"пътуващо кино, най-новите тематично подбрани филми"} />
 
-            <div className="px-4 pb-12 sm:pt-4 sm:pb-20 sm:px-0 text-gray-600 body-font max-w-5xl mx-auto">
-                <h1 className="text-xl sm:text-4xl text-center lh-6 ld-04 font-bold text-white">
+            <div className="px-4 pb-10 sm:pt-4 sm:pb-20 sm:px-0 text-gray-600 body-font max-w-5xl mx-auto">
+                <h1 className="text-lg sm:text-4xl text-center lh-6 ld-04 font-bold text-white">
                     ПЪТУВАЩО КИНО
                 </h1>
             </div>
             <div>
-                <p className="text-base sm:text-2xl text-white mb-6">
+                <p className="text-base sm:text-2xl text-white">
                     Нашият проект „Пътуващо кино“ стартира през 2008 г. и е първото пътуващо кино в България след 1990 г.
                     Главната ни цел е да популяризираме българското кино, за да могат българските филми да достигнат до хората,
                     за които са предназначени – българските зрители, независимо в коя точка от страната живеят.

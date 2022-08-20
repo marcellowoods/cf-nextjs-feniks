@@ -6,13 +6,13 @@ import Meta from '../components/Meta';
 import VideoGallery from '../components/VideoGallery';
 
 
-const Gallery = () => {
+const LazernoShow = () => {
     return (
         <PagesLayout>
             <Meta title={"лазерно шоу"} description={"лазерно шоу, светлинно шоу"} />
             <div>
-                <div className="px-4 pb-12 sm:pt-4 sm:pb-20 text-gray-600 body-font max-w-5xl mx-auto">
-                    <h1 className="text-xl sm:text-4xl text-center lh-6 ld-04 font-bold text-white">
+                <div className="px-4 pb-10 sm:pt-4 sm:pb-20 text-gray-600 body-font max-w-5xl mx-auto">
+                    <h1 className="text-lg sm:text-4xl text-center lh-6 ld-04 font-bold text-white">
                         {/* Винаги сме готови да оцветим вашия празник! Композираме и индивидуално шоу по ваши песни! */}
                         ЛАЗЕРНО ШОУ
                     </h1>
@@ -51,4 +51,4 @@ const Gallery = () => {
     );
 }
 
-export default Gallery;
+export default LazernoShow;

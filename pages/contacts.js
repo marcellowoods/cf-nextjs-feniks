@@ -4,7 +4,7 @@ import PagesLayout from '../components/PagesLayout';
 // import Lasers from '../components/Effects/Lasers/Lasers';
 //for newline add whitespace-pre-line and use inside text {"\n"} 
 
-const Gallery = () => {
+const Contacts = () => {
     return (
 
         <div className="relative h-full overflow-hidden z-0 min-h-screen">
@@ -48,4 +48,4 @@ const Gallery = () => {
     );
 }
 
-export default Gallery;
+export default Contacts;
