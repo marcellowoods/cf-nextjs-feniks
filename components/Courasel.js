@@ -9,12 +9,6 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { sliderImagesFallback } from "../constants";
-
-const defaultSliderImageSrc = sliderImagesFallback;
-
-// https://stackoverflow.com/questions/66949606/what-is-the-best-way-to-have-a-fallback-image-in-nextjs
-
 
 const Courasel = ({ images }) => {
 

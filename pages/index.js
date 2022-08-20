@@ -59,8 +59,8 @@ export default function Home() {
                 <div className="">
                     <div className="relative ">
                         {/* bg-gray-900 */}
-                        <h1 className="p-2 whitespace-pre-line bg-gray-900 w-full lg:max-w-5xl bg-opacity-50 z-10  text-base sm:text-2xl text-center lh-6 ld-04 font-bold text-white  bottom-0 left-1/2 absolute -translate-x-1/2">
-                            Организиране на концерти, лазерно шоу, партита, фойерверки,{"\n"} прожекции на филми, {"\n"}
+                        <h1 className="p-2 whitespace-pre-line bg-gray-900 w-full bg-opacity-50 z-10  text-base sm:text-2xl text-center lh-6 ld-04 font-bold text-white  bottom-0 left-1/2 absolute -translate-x-1/2">
+                            Организиране на концерти,{"\n"} лазерно шоу, партита, фойерверки,{"\n"} прожекции на филми, {"\n"}
                             семинари, презентации, {"\n"}
                             индивидуално шоу по ваши песни.
                         </h1>
