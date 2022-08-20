@@ -59,8 +59,8 @@ export default function Home() {
                 <div className="">
                     <div className="relative ">
                         {/* bg-gray-900 */}
-                        <h1 className="p-2 whitespace-pre-line bg-gray-900 w-full lg:max-w-5xl bg-opacity-50 z-10  text-lg sm:text-2xl lg:text-4xl text-center lh-6 ld-04 font-bold text-white  bottom-0 left-1/2 absolute -translate-x-1/2">
-                            Организиране на концерти, лазерно шоу, партита, фойерверки, прожекции на филми, {"\n"}
+                        <h1 className="p-2 whitespace-pre-line bg-gray-900 w-full lg:max-w-5xl bg-opacity-50 z-10  text-base sm:text-2xl text-center lh-6 ld-04 font-bold text-white  bottom-0 left-1/2 absolute -translate-x-1/2">
+                            Организиране на концерти, лазерно шоу, партита, фойерверки,{"\n"} прожекции на филми, {"\n"}
                             семинари, презентации, {"\n"}
                             индивидуално шоу по ваши песни.
                         </h1>
@@ -84,26 +84,26 @@ export default function Home() {
 
                 <CategoryCard
                     linkRef={"meropriyatiya"}
-                    title={"ОРГАНИЗИРАНЕ НА МЕРОПРИЯТИЯ"}
-                    description={"фирмени партита, DJ-партита, семинари, презентации на открито и закрито"}
+                    title={"ОРГАНИЗИРАНЕ НА\n МЕРОПРИЯТИЯ"}
+                    description={"фирмени партита,\n DJ-партита,\n семинари,\n презентации на открито и закрито"}
                 />
 
                 <CategoryCard
                     linkRef={"koncerti"}
                     title={"КОНЦЕРТИ"}
-                    description={"концерти на открито и закрито по повод различни събития и празници"}
+                    description={"концерти на открито и закрито\n по повод различни събития и празници"}
                 />
 
                 <CategoryCard
                     linkRef={"kino"}
                     title={"ПЪТУВАЩО КИНО"}
-                    description={"показваме най-новите, тематично подбрани филми"}
+                    description={"показваме най-новите,\n тематично подбрани филми"}
                 />
 
                 <CategoryCard
                     linkRef={"lazerno-show"}
                     title={"ЛАЗЕРНО ШОУ"}
-                    description={"спектакъл с визуални светлинни внушения, което разчупва визията на мероприятието"}
+                    description={"спектакъл с визуални светлинни внушения,\n което разчупва визията на мероприятието"}
                 />
 
 
@@ -113,7 +113,7 @@ export default function Home() {
                 <CategoryCard
                     linkRef={"fusion-show"}
                     title={"FUSION SHOW"}
-                    description={"нов иновативен проект на шоу непоказвано в България"}
+                    description={"нов иновативен проект\n на шоу\n непоказвано в България"}
                 />
             </div>
 

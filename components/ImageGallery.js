@@ -11,7 +11,7 @@ const ImageWithZoom = ({ imageUrl }) => {
             <div className="w-full p-1 md:p-2">
                 <Zoom>
                     {/* https://tailwindcss.com/docs/aspect-ratio */}
-                    <img alt="gallery" className=" block object-cover w-full aspect-video object-center  rounded-lg"
+                    <img alt="gallery" className="block object-cover w-full aspect-video object-center  rounded-lg"
                         src={imageUrl} />
 
                     {/* <Image

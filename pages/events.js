@@ -29,7 +29,7 @@ const Events = () => {
             {/* <Header name={globalData.name} /> */}
 
             <div className="px-4 pb-14 sm:pb-20 sm:pt-4 sm:pb-16 sm:px-0 text-gray-600 body-font max-w-5xl mx-auto">
-                <h1 className="text-2xl   sm:text-4xl text-center  lh-6 ld-04 font-bold text-white">
+                <h1 className="text-xl sm:text-4xl text-center  lh-6 ld-04 font-bold text-white">
                     СЪБИТИЯ
                 </h1>
             </div>
