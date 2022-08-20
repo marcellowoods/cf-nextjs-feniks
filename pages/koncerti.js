@@ -20,34 +20,34 @@ const Gallery = () => {
                 </h1>
             </div>
             <div>
-                <p className="text-lg sm:text-2xl text-white mb-6">
+                <p className="text-base sm:text-2xl text-white mb-6">
                     От 2012 г. продуцентска къща „Феникс” организира концерти на открито и закрито по повод различни събития и празници на градове в цялата страна.
                 </p>
 
-                <p className="text-lg sm:text-2xl text-white mb-6">
+                <p className="text-base sm:text-2xl text-white mb-6">
                     Стремежът на нашия екип е винаги  да предлагаме гъвкава организация на събитието, според изискванията на клиента - съобразно повода, вкуса, предвидената зрителска аудитория, бюджетните рамки и др.
 
                 </p>
 
-                <p className="text-lg sm:text-2xl text-white mb-6">
+                <p className="text-base sm:text-2xl text-white mb-6">
                     Въпреки всички тези рамки нашите сцени винаги се различават с наш собствен стил - наличие на мултимедийни екрани, на които текат ваши рекламни материали, споменава се кой е организатор и спонсор на събитието, различни фонови ефекти, директни заснемания на сцената и публиката от камери в близък и далечен план и др.
                 </p>
 
-                <p className="text-lg sm:text-2xl text-white mb-6">
+                <p className="text-base sm:text-2xl text-white mb-6">
                     За сцените ни използваме различни украси, декорации, оръдия за конфети, сценични фонтани и огньове и други ефекти.
                 </p>
 
-                <p className="text-lg sm:text-2xl  text-white mb-6">
+                <p className="text-base sm:text-2xl  text-white mb-6">
                     За реализацията на концертите работим с почти всички български и някои чуждестранни изпълнители от различни жанрове.
                 </p>
 
-                <p className="text-lg sm:text-2xl  text-white mb-6">
+                <p className="text-base sm:text-2xl  text-white mb-6">
                     Цените на всеки концерт са индивидуални в зависимост от хонорара на изпълнителя, големината на сцената и нейната аранжировка, силата на звука, налечието на екрани и др.
                 </p>
 
 
             </div>
-            <div className="py-14">
+            <div className="sm:py-14">
                 <ImageGallery images={categoryImages["koncerti"]} />
             </div>
         </PagesLayout>

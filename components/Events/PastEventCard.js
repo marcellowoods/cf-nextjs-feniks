@@ -78,7 +78,7 @@ const PastEventCard = ({ pastEvent }) => {
                 )}
 
                 {pastEvent.description && (
-                    <p className="mt-3 text-lg ">
+                    <p className="mt-3 text-base sm:text-lg ">
                         {pastEvent.description}
                     </p>
                 )}
