@@ -18,6 +18,11 @@ change the build key to
 now when you yarn build everything is exported to the out folder  
 upload that to cf  
 
+## libraries
+see top libraries here  
+https://openbase.com/categories/js/best-react-carousel-libraries
+
+
 
 
 
