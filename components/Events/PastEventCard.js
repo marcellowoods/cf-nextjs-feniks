@@ -74,7 +74,7 @@ const PastEventCard = ({ pastEvent }) => {
                 )}
 
                 {pastEvent.location && (
-                    <h2 className="text-2xl md:text-3xl">{pastEvent.location}</h2>
+                    <h2 className="text-xl sm:text-3xl">{pastEvent.location}</h2>
                 )}
 
                 {pastEvent.description && (
