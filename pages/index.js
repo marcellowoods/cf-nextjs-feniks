@@ -3,6 +3,7 @@ import CategoryCard from "../components/CategoryCard";
 import Lasers2 from "../components/Effects/Lasers/Lasers2";
 import Courasel from "../components/Courasel";
 import { sliderImages } from "../constants";
+import MainMessage from "../components/MainMessage";
 
 // no courasel
 // <div className="pb-12  sm:pb-12  pt-12">
@@ -115,6 +116,10 @@ export default function Home() {
                     title={"FUSION SHOW"}
                     description={"нов иновативен проект\n на шоу\n непоказвано в България"}
                 />
+            </div>
+
+            <div className="max-w-2xl pt-52 px-4 pb-12 mx-auto">
+                <MainMessage />
             </div>
 
         </section>

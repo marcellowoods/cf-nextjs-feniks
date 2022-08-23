@@ -23,10 +23,10 @@ const createImageArray = (imgsLength, imgsLocation) => {
  */
 
 
-/** @type {pastEvent[]} */ 
+/** @type {pastEvent[]} */
 const chronologicalEvents = [
     {
-        location: " с. Петърч.",
+        location: " село Петърч",
         date: { year: 2022, month: 7, day: 15 },
         description: "Прожекция на новия български филм \"Като за последно\".",
         images: [
@@ -39,7 +39,7 @@ const chronologicalEvents = [
         },
     },
     {
-        location: "с. Драговищица - София Окръг.",
+        location: "село Драговищица",
         date: { year: 2022, month: 7, day: 16 },
         description: "Продължаваме с киното под звездите",
         images: [
@@ -53,7 +53,7 @@ const chronologicalEvents = [
         },
     },
     {
-        location: "гр. Костинброд.",
+        location: "град Костинброд",
         date: { year: 2022, month: 7, day: 22 },
         description: "Прожекция на новия български филм \"Петя на моята Петя\" под звездите.",
         images: [
@@ -67,7 +67,7 @@ const chronologicalEvents = [
     },
 
     {
-        location: "гр. Брегово",
+        location: "град Брегово",
         date: { year: 2022, month: 8, day: 13 },
         description: "Деси Слава, Глория и атрактивно лазерно шоу.",
         images: createImageArray(11, pastEventImageLocation + "/2022-8-13/"),
@@ -93,6 +93,17 @@ const chronologicalEvents = [
 
         ]
     },
+
+    {
+        location: "село Ягода",
+        date: { year: 2022, month: 8, day: 22 },
+        description: "Концерт на Тони Димитрова и лазерно шоу",
+        images: createImageArray(23, pastEventImageLocation + "/2022-8-22/"),
+        categoryImages: {
+            [CATEGORY_TYPES.lazeri]: createImageArray(23, pastEventImageLocation + "/2022-8-22/"),
+        },
+
+    }
 
 ].reverse();
 

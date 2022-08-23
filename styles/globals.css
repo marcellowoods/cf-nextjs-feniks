@@ -290,3 +290,36 @@ a {
     }
 }
 
+
+/* https://codepen.io/P1N2O/pen/pyBNzX */
+/* Pure CSS Gradient Background Animation */
+
+/* .message-background-color {
+    background: linear-gradient(90deg, rgb(164, 0, 201, 0.4), rgba(26, 255, 0, 0.4), rgba(255, 0, 111, 0.4), rgba(12, 149, 144, 0.4));
+	background-size: 400% 400%;
+	animation: gradient-message 15s ease infinite;
+} */
+
+/* @keyframes gradient-message {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+.message-background-color {
+    background-color: rgb(164, 0, 201, 0.3);
+    animation: gradient-message 7s infinite;
+}
+
+@keyframes gradient-message {
+    50% {
+        background-color: rgb(98, 255, 0, 0.3);
+    }
+}
+
