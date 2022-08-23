@@ -118,7 +118,7 @@ export default function Home() {
                 />
             </div>
 
-            <div className="max-w-2xl pt-24 sm:pt-52 px-4 sm:pb-12 mx-auto">
+            <div className="max-w-2xl pt-8 sm:pt-16 px-4  mx-auto">
                 <MainMessage />
             </div>
 
