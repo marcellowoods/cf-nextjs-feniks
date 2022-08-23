@@ -1,3 +1,13 @@
+/**
+ * @typedef {object} futureEvent
+ * @property {string} time
+ * @property {string} title
+ * @property {string} location
+ * @property {string} image
+ */
+
+
+/** @type {futureEvent[]} */
 const allEvents = [
     // {
     //     time: "13 август 21.00 ч.",

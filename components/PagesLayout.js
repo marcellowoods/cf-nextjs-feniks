@@ -1,10 +1,9 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 
 //https://stackoverflow.com/questions/59812003/tailwindcss-fixed-sticky-footer-on-the-bottom
 
 const PagesLayout = ({ children }) => {
-
 
     return (
         <div className={` min-h-screen pages-gradient pages-gradient`}>

@@ -12,7 +12,18 @@ const createImageArray = (imgsLength, imgsLocation) => {
     return images;
 }
 
+/**
+ * @typedef {object} pastEvent
+ * @property {string} location
+ * @property {object} date
+ * @property {string} description
+ * @property {string[]} images
+ * @property {string[]} categoryImages
+ * @property {string[]} categoryVideos
+ */
 
+
+/** @type {pastEvent[]} */ 
 const chronologicalEvents = [
     {
         location: " с. Петърч.",

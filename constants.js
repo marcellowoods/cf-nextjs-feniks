@@ -5,6 +5,7 @@ import sliderImages from "./db/images/sliderImages";
 
 import allVideos from "./db/videos/allVideos";
 import eventsCategoryVideos from "./db/videos/eventsCategoryVideos";
+import messages from "./db/messages";
 
 const categoryImages = eventsCategoryImages;
 const categoryVideos = eventsCategoryVideos;
@@ -16,6 +17,8 @@ export {
     sliderImages,
 
     categoryVideos,
-    allVideos
+    allVideos,
+
+    messages
 };
 
