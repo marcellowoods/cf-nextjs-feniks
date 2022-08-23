@@ -56,7 +56,7 @@ const VideoGallery = ({ videos }) => {
         <section className="overflow-hidden text-gray-700 ">
 
             {videos.slice(0, vidNum).map((videoUrl => (
-                <div key={videoUrl} className="pt-2 sm:pt-4">
+                <div key={videoUrl} className="pt-4 sm:pt-4">
                     <Video videoUrl={videoUrl} />
                 </div>
             )))}

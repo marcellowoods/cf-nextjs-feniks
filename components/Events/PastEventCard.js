@@ -61,7 +61,7 @@ const PastEventCard = ({ pastEvent }) => {
 
     return (
         <div
-            className=" rounded-lg bg-opacity-30 bg-black  "
+            className="rounded-lg bg-opacity-30 bg-black"
         >
 
 
@@ -86,7 +86,7 @@ const PastEventCard = ({ pastEvent }) => {
             </div>
 
             {pastEvent.images && (
-                <div className="pb-2 pt-3 lg:pt-5">
+                <div className="pb-1 pt-3 px-4 lg:pt-5">
                     <ImageGallery images={pastEvent.images} />
                 </div>
             )}

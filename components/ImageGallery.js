@@ -7,8 +7,10 @@ import 'react-medium-image-zoom/dist/styles.css';
 const ImageWithZoom = ({ imageUrl }) => {
 
     return (
-        <div className="flex flex-wrap sm:w-1/3">
-            <div className="w-full p-1 md:p-2">
+        <div className="sm:w-1/3">
+
+             {/*-my-1: remove padding added by Zoom  */}
+            <div className="w-full p-1 sm:-my-1">
                 <Zoom>
                     {/* https://tailwindcss.com/docs/aspect-ratio */}
                     <img alt="gallery" className="block object-cover w-full aspect-video object-center  rounded-lg"
@@ -37,9 +39,11 @@ const ImageGallery = ({ images }) => {
     }
 
     return (
-        <section className="overflow-hidden text-gray-700">
-            <div className="container px-5 py-2 mx-auto">
-                <div className="flex flex-wrap -m-1 md:-m-2">
+
+        // -mx-4: remove px-4 from the pages layout
+        <section className="-mx-4 overflow-hidden text-gray-700">
+            <div className="container py-2 mx-auto">
+                <div className="flex flex-wrap -m-1">
                     {images.slice(0, imgNum).map((imageUrl => (
                         <ImageWithZoom key={imageUrl} imageUrl={imageUrl} />
                     )))}
