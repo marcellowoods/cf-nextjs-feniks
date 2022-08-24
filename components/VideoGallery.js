@@ -63,8 +63,8 @@ const VideoGallery = ({ videos }) => {
 
             {vidNum < videos.length &&
                 (
-                    <div className="pt-2 flex flex-col items-center">
-                        <button className="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-500 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" onClick={handleClick}>
+                    <div className="pt-4 pb-2 flex flex-col items-center">
+                        <button className="h-12 px-6 text-lg text-indigo-100 transition-colors duration-500 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" onClick={handleClick}>
                             покажи още видеа
                         </button>
                     </div>

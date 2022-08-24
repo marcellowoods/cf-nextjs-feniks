@@ -89,7 +89,7 @@ const MainMessage = () => {
             className="rounded-lg bg-opacity-40 message-background-color"
         >
             <div className="pt-12 px-12 pb-8">
-                <h3 className="text-white text-lg sm:text-xl font-bold text-center">{text}</h3>
+                <h3 className="text-white text-base sm:text-xl font-bold text-center">{text}</h3>
             </div>
 
             {renderVideo()}
@@ -97,10 +97,10 @@ const MainMessage = () => {
             {renderImage()}
 
             <div className="py-4">
-                <h3 className="text-white  text-lg sm:text-xl font-bold text-center">разгледайте</h3>
+                <h3 className="text-white  text-base sm:text-xl font-bold text-center">разгледайте</h3>
                 <Link href={"/events"}>
 
-                    <h3 className="text-white text-lg sm:text-xl font-bold underline cursor-pointer text-center">събитията организирани от нас</h3>
+                    <h3 className="text-white text-base sm:text-xl font-bold underline cursor-pointer text-center">събитията организирани от нас</h3>
 
                 </Link>
             </div>
