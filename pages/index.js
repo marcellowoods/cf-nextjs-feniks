@@ -126,7 +126,7 @@ export default function Home() {
                 <MessageCourasel />
             </div>
 
-            <div className=" py-6 sm:py-10 sm:pt-48">
+            <div className=" pt-24 sm:pt-48">
                 <h3 className="text-white  text-base sm:text-4xl  text-center">разгледайте</h3>
                 <Link href={"/events"}>
 

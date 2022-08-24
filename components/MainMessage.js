@@ -97,7 +97,7 @@ const MainMessage = ({ message }) => {
             className="rounded-lg bg-opacity-40 message-background-color"
         >
             <div className="pt-12 px-12 pb-8">
-                <h3 className="text-white text-base sm:text-xl font-bold text-center">{text}</h3>
+                <h3 className="text-white text-base sm:text-2xl font-bold text-center">{text}</h3>
             </div>
 
             {renderVideo()}
