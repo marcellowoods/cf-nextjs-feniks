@@ -1,6 +1,4 @@
 import React from 'react'
-// import ImageGallery from '../components/ImageGallery';
-// import { categoryImages } from '../constants';
 import PagesLayout from '../components/PagesLayout';
 import Meta from '../components/Meta';
 
@@ -38,9 +36,7 @@ const FusionShow = () => {
                     Надяваме се да покажем на публиката нов, различен формат.
                 </p>
             </div>
-            {/* <div className="py-14">
-                <ImageGallery images={categoryImages["lazeri"]} />
-            </div> */}
+
         </PagesLayout>
     );
 }

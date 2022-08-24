@@ -1,6 +1,4 @@
 import React from 'react'
-// import ImageGallery from '../components/ImageGallery';
-// import { categoryImages } from '../constants';
 import PagesLayout from '../components/PagesLayout';
 import Meta from '../components/Meta';
 
@@ -30,9 +28,7 @@ const Meropriyatiya = () => {
                     Ако вие сами сте организирали събитието си, но се нуждаете от техническа подкрепа, осигуряваме на изгодни цени мултимедиийни проектори, екрани, лазери и озвучителна техника със съотвения оператор.
                 </p>
             </div>
-            {/* <div className="py-14">
-                <ImageGallery images={categoryImages["lazeri"]} />
-            </div> */}
+
         </PagesLayout>
     );
 }

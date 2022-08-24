@@ -1,10 +1,7 @@
 import React from 'react'
-import ImageGallery from '../components/ImageGallery';
-import { categoryImages, categoryVideos } from '../constants';
 import PagesLayout from '../components/PagesLayout';
 import Meta from '../components/Meta';
-import VideoGallery from '../components/VideoGallery';
-
+import CategoryMedia from '../components/CategoryMedia';
 
 const LazernoShow = () => {
     return (
@@ -34,18 +31,8 @@ const LazernoShow = () => {
                 </p>
             </div>
 
-            {categoryVideos["lazeri"] && (
-                <VideoGallery videos={categoryVideos["lazeri"]} />
-            )}
 
-            {categoryImages["lazeri"] && (
-                <div className="pt-2">
-                    <ImageGallery images={categoryImages["lazeri"]} />
-                </div>
-            )}
-
-
-
+            <CategoryMedia category={"lazeri"} />
 
         </PagesLayout>
     );

@@ -10,7 +10,7 @@ const ImageWithZoom = ({ imageUrl }) => {
         <div className="sm:w-1/3">
 
              {/*-my-1: remove padding added by Zoom  */}
-            <div className="w-full p-1 sm:-my-1">
+            <div className="w-full p-1">
                 <Zoom>
                     {/* https://tailwindcss.com/docs/aspect-ratio */}
                     <img alt="gallery" className="block object-cover w-full aspect-video object-center  rounded-lg"
@@ -41,9 +41,9 @@ const ImageGallery = ({ images }) => {
     return (
 
         // -mx-4: remove px-4 from the pages layout
-        <section className="-mx-4 overflow-hidden text-gray-700">
-            <div className="container pt-2  mx-auto">
-                <div className="flex flex-wrap -m-1">
+        <section className="overflow-visible text-gray-700">
+            <div className="mx-auto">
+                <div className="flex flex-wrap">
                     {images.slice(0, imgNum).map((imageUrl => (
                         <ImageWithZoom key={imageUrl} imageUrl={imageUrl} />
                     )))}
@@ -52,7 +52,7 @@ const ImageGallery = ({ images }) => {
 
             {imgNum < images.length &&
                 (
-                    <div className="flex pt-3 pb-2 flex-col items-center">
+                    <div className="pb-1 pt-1 flex flex-col items-center">
                         <button className="h-12 px-6 text-lg text-indigo-100 transition-colors duration-500 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" onClick={handleClick}>
                             покажи още снимки
                         </button>

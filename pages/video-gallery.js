@@ -14,7 +14,9 @@ const VideoGalleryPage = () => {
                 </h1>
             </div>
 
-            <VideoGallery videos={allVideos} />
+            <div className="-mx-2">
+                <VideoGallery videos={allVideos} />
+            </div>
 
 
         </PagesLayout>

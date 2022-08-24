@@ -65,7 +65,7 @@ const PastEventCard = ({ pastEvent }) => {
         >
 
 
-            <div className="pt-6 lg:pt-10 pb-3 px-6 lg:px-10 text-white  ">
+            <div className="pt-6 pb-4 sm:pb-6 lg:pt-10  px-6 lg:px-10 text-white  ">
 
                 {pastEvent.date && (
                     <p className="uppercase mb-3 font-bold ">
@@ -86,14 +86,14 @@ const PastEventCard = ({ pastEvent }) => {
             </div>
 
             {pastEvent.images && (
-                <div className="px-4 pt-4 pb-3">
+                <div className="p-1">
                     <ImageGallery images={pastEvent.images} />
                 </div>
             )}
 
             {pastEvent.videos && (
-                <div className={classNames("px-4 pt-4 pb-2",
-                    (pastEvent.images && pastEvent.images.length) ? "-mt-8" : "",
+                <div className={classNames("p-2",
+                    (pastEvent.images && pastEvent.images.length) ? "-mt-2" : "",
                 )}>
                     <VideoGallery videos={pastEvent.videos} />
                 </div>

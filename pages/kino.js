@@ -3,10 +3,11 @@ import PagesLayout from '../components/PagesLayout';
 import ImageGallery from '../components/ImageGallery';
 import { categoryImages, categoryVideos } from '../constants';
 import Meta from '../components/Meta';
+import CategoryMedia from '../components/CategoryMedia';
 // import VideoGallery from '../components/VideoGallery';
 
 
-const Gallery = () => {
+const Kino = () => {
     return (
 
         <PagesLayout>
@@ -32,9 +33,8 @@ const Gallery = () => {
                     На първо място обаче е факта, че показваме най-новите, тематично подбрани филми.
                 </p>
             </div>
-            <div className="sm:py-14">
-                <ImageGallery images={categoryImages["kino"]} />
-            </div>
+            
+            <CategoryMedia category={"kino"}/>
 
             {/* <VideoGallery videos={categoryVideos["kino"]} /> */}
 
@@ -42,4 +42,4 @@ const Gallery = () => {
     );
 }
 
-export default Gallery;
+export default Kino;

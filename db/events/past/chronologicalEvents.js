@@ -97,7 +97,7 @@ const chronologicalEvents = [
     {
         location: "село Ягода",
         date: { year: 2022, month: 8, day: 22 },
-        description: "Концерт на Тони Димитрова и лазерно шоу",
+        description: "Концерт на Тони Димитрова и лазерно шоу.",
         images: createImageArray(23, pastEventImageLocation + "/2022-8-22/"),
         categoryImages: {
             [CATEGORY_TYPES.lazeri]: createImageArray(23, pastEventImageLocation + "/2022-8-22/"),

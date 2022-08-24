@@ -3,6 +3,7 @@ import ImageGallery from '../components/ImageGallery';
 import { categoryImages } from '../constants';
 import PagesLayout from '../components/PagesLayout';
 import Meta from '../components/Meta';
+import CategoryMedia from '../components/CategoryMedia';
 
 
 //for newline add whitespace-pre-line and use inside text {"\n"} 
@@ -45,9 +46,9 @@ const Koncerti = () => {
 
 
             </div>
-            <div className="sm:py-14">
-                <ImageGallery images={categoryImages["koncerti"]} />
-            </div>
+
+            <CategoryMedia category={"koncerti"}/>
+            
         </PagesLayout>
     );
 }

@@ -56,14 +56,14 @@ const VideoGallery = ({ videos }) => {
         <section className="overflow-hidden text-gray-700 ">
 
             {videos.slice(0, vidNum).map((videoUrl => (
-                <div key={videoUrl} className="pt-4 sm:pt-4">
+                <div key={videoUrl} className="pb-2">
                     <Video videoUrl={videoUrl} />
                 </div>
             )))}
 
             {vidNum < videos.length &&
                 (
-                    <div className="pt-4 pb-2 flex flex-col items-center">
+                    <div className="flex flex-col items-center">
                         <button className="h-12 px-6 text-lg text-indigo-100 transition-colors duration-500 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" onClick={handleClick}>
                             покажи още видеа
                         </button>
