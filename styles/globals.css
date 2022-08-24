@@ -295,12 +295,12 @@ a {
 /* Pure CSS Gradient Background Animation */
 
 /* .message-background-color {
-    background: linear-gradient(90deg, rgb(164, 0, 201, 0.4), rgba(26, 255, 0, 0.4), rgba(255, 0, 111, 0.4), rgba(12, 149, 144, 0.4));
-	background-size: 300% 300%;
+    background: linear-gradient(45deg, rgb(164, 0, 201, 0.4), rgba(26, 255, 0, 0.4), rgba(255, 0, 111, 0.4), rgba(12, 149, 144, 0.4));
+	background-size: 250% 150%;
 	animation: gradient-message 15s ease infinite;
-} */
+}
 
-/* @keyframes gradient-message {
+@keyframes gradient-message {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -310,17 +310,6 @@ a {
 	100% {
 		background-position: 0% 50%;
 	}
-} */
-
-/* .message-background-color {
-    background-color: rgb(164, 0, 201, 0.3);
-    animation: gradient-message 7s infinite;
-}
-
-@keyframes gradient-message {
-    50% {
-        background-color: rgb(98, 255, 0, 0.3);
-    }
 } */
 
 .message-background-color {
