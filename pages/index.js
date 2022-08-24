@@ -3,7 +3,9 @@ import CategoryCard from "../components/CategoryCard";
 import Lasers2 from "../components/Effects/Lasers/Lasers2";
 import Courasel from "../components/Courasel";
 import { sliderImages } from "../constants";
-import MainMessage from "../components/MainMessage";
+// import MainMessage from "../components/MainMessage";
+import MessageCourasel from "../components/MessageCourasel";
+import Link from "next/link";
 
 // no courasel
 // <div className="pb-12  sm:pb-12  pt-12">
@@ -118,8 +120,19 @@ export default function Home() {
                 />
             </div>
 
-            <div className="max-w-2xl pt-8 sm:pt-16 px-4  mx-auto">
-                <MainMessage />
+
+
+            <div className="max-w-4xl pt-8  px-4  mx-auto">
+                <MessageCourasel />
+            </div>
+
+            <div className=" py-6 sm:py-10 sm:pt-48">
+                <h3 className="text-white  text-base sm:text-4xl  text-center">разгледайте</h3>
+                <Link href={"/events"}>
+
+                    <h3 className="text-white text-base sm:text-4xl  underline cursor-pointer text-center">събитията организирани от нас</h3>
+
+                </Link>
             </div>
 
         </section>
