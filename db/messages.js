@@ -1,5 +1,7 @@
 import { pastEventImageLocation } from "./images/imageLocations";
 
+
+//should have video or image but not both
 /**
  * @typedef {object} Message
  * @property {string} text
