@@ -3,6 +3,8 @@ import dynamic from 'next/dynamic';
 import { messages } from '../constants';
 import Link from 'next/link';
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+
+import { Waypoint } from 'react-waypoint';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css';
 
@@ -15,24 +17,36 @@ import 'react-medium-image-zoom/dist/styles.css';
 const MainVideo = ({ videoUrl }) => {
 
     const [isReady, setIsReady] = useState(false);
-    const [play, setPlay] = useState(false);
+    const [shouldPlay, updatePlayState] = useState(false);
+
+    let handleEnterViewport = function () {
+        updatePlayState(true);
+    }
+    let handleExitViewport = function () {
+        updatePlayState(false);
+    }
 
 
     return (
-
+        <Waypoint
+            onEnter={handleEnterViewport}
+            onLeave={handleExitViewport}
+            bottomOffset={"25%"}
+            topOffset={"25%"}
+        >
             <div key={videoUrl} className="player-wrapper">
                 <ReactPlayer
                     loop={true}
                     url={videoUrl}
                     onReady={() => setIsReady(true)}
                     className="react-player"
-                    playing={true}
+                    playing={shouldPlay}
                     autoplay={true}
                     muted={true}
                     // light={true}
                     width="100%"
                     height="100%"
-                    
+
 
                 />
 
@@ -49,7 +63,8 @@ const MainVideo = ({ videoUrl }) => {
                 )}
 
             </div>
-        
+        </Waypoint>
+
 
     )
 }
