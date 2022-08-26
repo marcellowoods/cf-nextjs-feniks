@@ -35,8 +35,7 @@ const CouraselVideo = ({ videoUrl }) => {
                     url={videoUrl}
                     onReady={() => setIsReady(true)}
                     className="react-player"
-                    playing={shouldPlay}
-                    autoplay={true}
+                    playing={(isReady && shouldPlay)}
                     muted={true}
                     // light={true}
                     width="100%"
