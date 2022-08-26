@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import CouraselVideo from "./CouraselVideo";
 
 // Import Swiper styles
 import "swiper/css";
@@ -31,7 +30,6 @@ const Courasel = ({ images }) => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-
                 {images.map((image, index) => {
                     return (
 
@@ -56,14 +54,6 @@ const Courasel = ({ images }) => {
                     )
 
                 })}
-
-                <SwiperSlide key={0}>
-                    <div className="relative overflow-hidden pb-12/12 lg:pb-5/12 ">
-                        <div className="absolute h-full w-full object-cover">
-                            <CouraselVideo videoUrl="https://www.youtube.com/watch?v=Nb88kPeSeCE" />
-                        </div>
-                    </div>
-                </SwiperSlide>
 
                 {/* <SwiperSlide>Slide 2</SwiperSlide> */}
                 {/* <SwiperSlide>Slide 3</SwiperSlide>

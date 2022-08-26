@@ -22,20 +22,20 @@ const createVideosFromType = (categoryType) => {
     
 }
 
-let lazeriEventsVideos = createVideosFromType(CATEGORY_TYPES.lazeri).concat(categoryVideos[CATEGORY_TYPES.lazeri]);
-lazeriEventsVideos = lazeriEventsVideos.filter(element => {
-    return element !== undefined;
-});
+let lazeriEventsVideos = createVideosFromType(CATEGORY_TYPES.lazeri);
+if(categoryVideos[CATEGORY_TYPES.lazeri]){
+    lazeriEventsVideos = lazeriEventsVideos.concat(categoryVideos[CATEGORY_TYPES.lazeri])
+}
 
-let kinoEventsVideos = createVideosFromType(CATEGORY_TYPES.kino).concat(categoryVideos[CATEGORY_TYPES.kino]);
-kinoEventsVideos = kinoEventsVideos.filter(element => {
-    return element !== undefined;
-});
+let kinoEventsVideos = createVideosFromType(CATEGORY_TYPES.kino);
+if(categoryVideos[CATEGORY_TYPES.kino]){
+    kinoEventsVideos = kinoEventsVideos.concat(categoryVideos[CATEGORY_TYPES.kino]);
+}
 
-let koncertiEventsVideos = createVideosFromType(CATEGORY_TYPES.koncerti).concat(categoryVideos[CATEGORY_TYPES.koncerti]);
-koncertiEventsVideos = koncertiEventsVideos.filter(element => {
-    return element !== undefined;
-});
+let koncertiEventsVideos = createVideosFromType(CATEGORY_TYPES.koncerti);
+if(categoryVideos[CATEGORY_TYPES.koncerti]){
+    koncertiEventsVideos = koncertiEventsVideos.concat(categoryVideos[CATEGORY_TYPES.koncerti]);
+}
 
 
 const eventsCategoryVideos = {
