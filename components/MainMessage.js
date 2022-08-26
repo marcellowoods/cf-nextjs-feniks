@@ -51,7 +51,7 @@ const MainMessage = ({ message }) => {
         <div
             className="rounded-lg bg-opacity-40 message-background-color"
         >
-            <div className="pt-12 px-12 pb-8">
+            <div className="pt-6 px-6 pb-2 sm:pt-12 sm:px-12 sm:pb-8">
                 <h3 className="text-white text-base sm:text-2xl font-bold text-center">{text}</h3>
             </div>
 

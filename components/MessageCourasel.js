@@ -2,15 +2,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import React, { useState } from 'react';
 import MainMessage from "./MainMessage";
 import { messages } from '../constants';
-import Link from "next/link";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay } from "swiper";
 
 // https://stackoverflow.com/questions/39159236/my-swiper-with-swiper-js-stop-autoplay-after-slide-it-with-finger-why
 const MessageCourasel = () => {
@@ -28,8 +25,8 @@ const MessageCourasel = () => {
                     // pagination={{
                     //     clickable: true,
                     // }}
-                    navigation={true}
-                    modules={[Autoplay, Pagination, Navigation]}
+                    // navigation={true}
+                    modules={[Autoplay]}
                     className="mySwiper"
                 >
                     {messages.map((message, index) => {
