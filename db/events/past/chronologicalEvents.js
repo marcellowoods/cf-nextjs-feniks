@@ -102,6 +102,11 @@ const chronologicalEvents = [
         categoryImages: {
             [CATEGORY_TYPES.lazeri]: createImageArray(23, pastEventImageLocation + "/2022-8-22/"),
         },
+        videos: [
+            "https://www.youtube.com/watch?v=byEnsqe28y8",
+            "https://www.youtube.com/watch?v=BNnIDDqHcwo",
+            "https://www.youtube.com/watch?v=5Eh5RVEZXIY"
+        ]
 
     }
 
