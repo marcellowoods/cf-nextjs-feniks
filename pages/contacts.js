@@ -18,7 +18,7 @@ const Contacts = () => {
                         <div className="max-w-xl mx-auto px-2 sm:px-6 text-center">
                             <div className="py-0 sm:py-12   ">
                                 <h1 className="mb-5 text-2xl sm:text-6xl font-bold text-white">
-                                    За връзки с нас
+                                    За връзка с нас
                                 </h1>
                                 {/* bg-opacity-70 bg-black */}
                                 <div className="bg-opacity-70 bg-black whitespace-pre rounded-lg py-8">

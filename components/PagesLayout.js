@@ -7,7 +7,7 @@ const PagesLayout = ({ children }) => {
 
     return (
         <div className={` min-h-screen pages-gradient pages-gradient`}>
-            <div className="px-4 lg:px-0 pb-14 text-gray-600 body-font max-w-5xl pt-20 sm:pt-32 mx-auto">
+            <div className="px-4 lg:px-0 pb-14 text-gray-600 body-font max-w-4xl pt-20 sm:pt-20 mx-auto">
 
                 {children}
             </div>
