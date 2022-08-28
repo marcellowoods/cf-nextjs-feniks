@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CouraselVideo from './CouraselVideo';
+import CouraselVideo from './BottomCouraselVideo';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css';
 
@@ -35,8 +35,22 @@ const MainMessage = ({ message }) => {
                 <div className="p-2">
 
                     <Zoom>
-                        <img alt="gallery" className="block object-cover w-full object-center rounded-lg"
-                            src={image} />
+
+                        <div className="relative overflow-hidden pb-12/12 lg:pb-6/12 ">
+                            <img alt="gallery"
+                                className="absolute h-full w-full object-cover"
+                                src={image}
+                            />
+                            {/* <Image
+                                    alt="gallery"
+                                    priority={true}
+                                    className="absolute h-full w-full object-cover"
+                                    layout='fill'
+                                    objectFit='cover'
+                                    src={image}
+                                /> */}
+                            {/* <CustomImage key={image} imageSrc={image} /> */}
+                        </div>
                     </Zoom>
 
                 </div>

@@ -1,6 +1,6 @@
 import { pastEventImageLocation } from "./images/imageLocations";
 
-
+const videosLocation = "/static/videos/"
 //should have video or image but not both
 /**
  * @typedef {object} Message
@@ -15,23 +15,24 @@ const messages = [
 
     {
         "text": "Светкавици, гръмотевици и лазерно шоу осветиха небето над село Ягода!",
-        "video": "https://www.youtube.com/watch?v=BNnIDDqHcwo",
+        "video": videosLocation + "video2.mp4"
         // "image": pastEventImageLocation + "/2022-8-22/" + "23.jpg",
     },
 
     {
         "text": "Може да оцветим небето и над вашият град!",
-        "video": "https://www.youtube.com/watch?v=byEnsqe28y8"
+        "image": pastEventImageLocation + "/2022-8-22/" + "8.jpg",
+        // "video": "https://www.youtube.com/watch?v=byEnsqe28y8"
     },
 
     {
         "text": "Концерт на Деси Слава и Глория с лазерно шоу.",
-        "video": "https://www.youtube.com/watch?v=ye2pne5k9sc"
+        "video": videosLocation + "video1.mp4"
     },
 
     {
         "text": "Можемe да композираме лазерно шоу на фона на вашата песен!",
-        "video": "https://www.youtube.com/watch?v=5Eh5RVEZXIY"
+        "image": pastEventImageLocation + "/2022-8-13/" + "10.jpg",
     },
 ]
 
