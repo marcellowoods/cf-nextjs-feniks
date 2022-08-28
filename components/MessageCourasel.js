@@ -16,8 +16,9 @@ const MessageCourasel = () => {
         <>
             <div className="overflow-hidden relative ">
                 <Swiper
+                    style={{ width: '100%', height: '100%' }}
                     spaceBetween={30}
-                    centeredSlides={true}
+                    // centeredSlides={true}
                     autoplay={{
                         delay: 6500,
                         disableOnInteraction: false,
@@ -27,13 +28,17 @@ const MessageCourasel = () => {
                     // }}
                     // navigation={true}
                     modules={[Autoplay]}
-                    className="mySwiper"
+                    className="swiper"
                 >
                     {messages.map((message, index) => {
 
                         return (
 
-                            <SwiperSlide key={index}>
+                            <SwiperSlide
+                                className="swiper-slide "
+                                style={{ height: "auto" }}
+                                key={index}
+                            >
                                 {({ isActive }) => (
                                     <MainMessage
                                         isActive={isActive}
