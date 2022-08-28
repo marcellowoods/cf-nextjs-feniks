@@ -11,7 +11,7 @@ const CategoryPageContacts = ({ hasPadding }) => {
 
     return (
         <div
-            className={classNames("max-w-2xl mx-auto", hasPadding ? "p-16 sm:p-32 " : "pt-12 pb-6")}
+            className={classNames("max-w-2xl mx-auto", hasPadding ? "py-16 sm:py-32 " : "pt-12 pb-6")}
         >
 
             <h3 className="pt-2 pb-2 text-white text-lg font-bold text-center">Свържете се с нас</h3>
