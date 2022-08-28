@@ -9,7 +9,7 @@ import 'react-medium-image-zoom/dist/styles.css';
  * @param {Message} params.message
  */
 
-const MainMessage = ({ message }) => {
+const MainMessage = ({ message, isActive }) => {
 
     const { text, image, video } = message;
 
@@ -19,7 +19,10 @@ const MainMessage = ({ message }) => {
             return (
                 <div className="p-2">
 
-                    <CouraselVideo videoUrl={video} />
+                    <CouraselVideo
+                        isActive={isActive}
+                        videoUrl={video}
+                    />
 
                 </div>
             )
@@ -36,7 +39,7 @@ const MainMessage = ({ message }) => {
 
                     <Zoom>
 
-                        <div className="relative overflow-hidden pb-12/12 lg:pb-6/12 ">
+                        <div className="relative overflow-hidden pb-12/12 md:pb-6/12 ">
                             <img alt="gallery"
                                 className="absolute h-full w-full object-cover"
                                 src={image}

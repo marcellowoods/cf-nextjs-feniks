@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 // import dynamic from 'next/dynamic';
 // const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -9,18 +9,36 @@ import { Waypoint } from 'react-waypoint';
  * @param {Message} params.message
  */
 
-const CouraselVideo = ({ videoUrl }) => {
+const CouraselVideo = ({ videoUrl, isActive }) => {
 
     const videoEl = useRef(null);
 
     // const [isReady, setIsReady] = useState(false);
-    // const [shouldPlay, updatePlayState] = useState(false);
+    const [shouldPlay, updatePlayState] = useState(false);
+
+    useEffect(() => {
+
+        if(isActive && shouldPlay){
+
+            videoEl.current.play();
+        }else if(isActive && !shouldPlay){
+
+            videoEl.current.pause();
+        }else if(!isActive){
+
+            videoEl.current.pause();
+        }
+
+    }, [isActive, shouldPlay])
 
     let handleEnterViewport = function () {
-        videoEl.current.play();
+
+        updatePlayState(true);
+        
     }
     let handleExitViewport = function () {
-        videoEl.current.pause();
+
+        updatePlayState(false);
     }
 
 
@@ -31,7 +49,7 @@ const CouraselVideo = ({ videoUrl }) => {
             bottomOffset={"25%"}
             topOffset={"25%"}
         >
-            <div key={videoUrl} className="relative overflow-hidden pb-12/12 lg:pb-6/12">
+            <div key={videoUrl} className="relative overflow-hidden pb-12/12 md:pb-6/12">
 
                 {/* <ReactPlayer
                     loop={true}
@@ -49,6 +67,7 @@ const CouraselVideo = ({ videoUrl }) => {
                 <video
                     ref={videoEl}
                     muted
+                    // controls
                     loop
                     style={{position: "absolute", height: "100%", width: "100%", objectFit: "cover" }} //object-fit:cover
                 >

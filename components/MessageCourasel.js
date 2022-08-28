@@ -34,7 +34,13 @@ const MessageCourasel = () => {
                         return (
 
                             <SwiperSlide key={index}>
-                                <MainMessage message={message} />
+                                {({ isActive }) => (
+                                    <MainMessage
+                                        isActive={isActive}
+                                        message={message}
+                                    />
+                                )}
+
                             </SwiperSlide>
 
                         )
