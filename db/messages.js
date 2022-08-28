@@ -1,6 +1,5 @@
 import { pastEventImageLocation } from "./images/imageLocations";
-
-const videosLocation = "/static/videos/"
+import { videosLocation } from "./videos/videosLocations";
 //should have video or image but not both
 /**
  * @typedef {object} Message
@@ -15,7 +14,7 @@ const messages = [
 
     {
         "text": "Светкавици, гръмотевици и лазерно шоу осветиха небето над село Ягода!",
-        "video": videosLocation + "video2.mp4"
+        "video": videosLocation + "2.mp4"
         // "image": pastEventImageLocation + "/2022-8-22/" + "23.jpg",
     },
 
@@ -27,7 +26,7 @@ const messages = [
 
     {
         "text": "Концерт на Деси Слава и Глория с лазерно шоу.",
-        "video": videosLocation + "video1.mp4"
+        "video": videosLocation + "1.mp4"
     },
 
     {
