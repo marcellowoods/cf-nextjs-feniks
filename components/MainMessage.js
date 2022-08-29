@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import CouraselVideo from './BottomCouraselVideo';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css';
@@ -15,9 +15,9 @@ const MainMessage = ({ message, isActive }) => {
 
     const { texts, image, video } = message;
 
-    const [isShowing, setIsShowing] = useState(false)
+    const allTextsLen = texts.join().length;
 
-    const inputEl = useRef(null);
+    const [isShowing, setIsShowing] = useState(true);
 
     const [index, setIndex] = useState(0);
 
@@ -28,14 +28,6 @@ const MainMessage = ({ message, isActive }) => {
             <></>
         )
     }
-
-    // useEffect(() => {
-
-
-    //     setIndex(0);
-
-
-    // }, [isActive]);
 
     useEffect(() => {
 
@@ -48,58 +40,47 @@ const MainMessage = ({ message, isActive }) => {
 
         setIsShowing(true);
 
-        let timeoutId0 = null;
-        let timeoutId1 = null;
+        let timeoutId = null;
 
-        const weight = texts[index].weight;
+        const weight = texts[index].length / allTextsLen;
 
-        console.log("index")
-        console.log(index);
+        let timeForText = (11000 * weight) - 500;
 
-
-        const timeForText = (8500 * weight) - 500;
-
-
-        timeoutId0 = setTimeout(() => {
+        timeoutId = setTimeout(() => {
 
             setIsShowing(false);
-            timeoutId1 = setTimeout(() => {
-                setIsShowing(true);
-                setIndex(index => {
-                    if (index >= texts.length) {
-
-                        return 0;
-                    }
-                    return index + 1;
-                });
-            }, 500)
         },
             timeForText
         );
 
-
-
         return () => {
-            clearTimeout(timeoutId0);
-            clearTimeout(timeoutId1);
+            clearTimeout(timeoutId);
         };
     }, [index, isActive]);
 
-    // useEffect(() => {
 
-    //     inputEl.current.classList.remove('opacity-100');
-    //     inputEl.current.classList.add('opacity-0');
+    useEffect(() => {
 
+        if(isShowing){
+            return;
+        }
 
-    //     let intervalId = setTimeout(() => {
-    //         inputEl.current.classList.add('opacity-100');
-    //     }, 500);
+         let timeoutId = setTimeout(() => {
+            setIsShowing(true);
+            setIndex(index => {
+                if (index >= texts.length) {
 
+                    return 0;
+                }
+                return index + 1;
+            });
+        }, 500)
 
-    //     return () => {
-    //         clearTimeout(intervalId);
-    //     };
-    // }, [index]);
+        return () => {
+            clearTimeout(timeoutId);
+        };
+
+    }, [isShowing])
 
     const renderVideo = () => {
 
@@ -132,15 +113,7 @@ const MainMessage = ({ message, isActive }) => {
                                 className="absolute h-full w-full object-cover"
                                 src={image}
                             />
-                            {/* <Image
-                                    alt="gallery"
-                                    priority={true}
-                                    className="absolute h-full w-full object-cover"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    src={image}
-                                /> */}
-                            {/* <CustomImage key={image} imageSrc={image} /> */}
+
                         </div>
                     </Zoom>
 
@@ -158,7 +131,7 @@ const MainMessage = ({ message, isActive }) => {
         >
             <div className="pt-6 px-6 pb-2 sm:pt-12 sm:px-12 sm:pb-8">
 
-                <h3 ref={inputEl} className={`text-white text-base sm:text-2xl font-bold text-center`}>
+                <h3 className={`text-white text-base sm:text-2xl font-bold text-center`}>
 
                     <Transition
                         show={isShowing}
@@ -169,7 +142,7 @@ const MainMessage = ({ message, isActive }) => {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        {texts[index % texts.length].value}
+                        {texts[index]}
                     </Transition>
 
                 </h3>
