@@ -21,14 +21,6 @@ const MainMessage = ({ message, isActive }) => {
 
     const [index, setIndex] = useState(0);
 
-    if (index >= texts.length) {
-
-        setIndex(0);
-        return (
-            <></>
-        )
-    }
-
     useEffect(() => {
 
         // setIndex(0);
@@ -44,7 +36,7 @@ const MainMessage = ({ message, isActive }) => {
 
         const weight = texts[index].length / allTextsLen;
 
-        let timeForText = (11000 * weight) - 500;
+        let timeForText = (10700 * weight) - 400;
 
         timeoutId = setTimeout(() => {
 
@@ -68,13 +60,13 @@ const MainMessage = ({ message, isActive }) => {
          let timeoutId = setTimeout(() => {
             setIsShowing(true);
             setIndex(index => {
-                if (index >= texts.length) {
+                if ((index + 1) >= texts.length) {
 
                     return 0;
                 }
                 return index + 1;
             });
-        }, 500)
+        }, 400)
 
         return () => {
             clearTimeout(timeoutId);
