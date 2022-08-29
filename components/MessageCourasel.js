@@ -20,7 +20,7 @@ const MessageCourasel = () => {
                     spaceBetween={30}
                     // centeredSlides={true}
                     autoplay={{
-                        delay: 6500,
+                        delay: 12500,
                         disableOnInteraction: false,
                     }}
                     // pagination={{

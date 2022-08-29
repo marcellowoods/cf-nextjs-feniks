@@ -23,32 +23,56 @@ const MainMessage = ({ message, isActive }) => {
 
     useEffect(() => {
 
+
         setIndex(0);
+
+
+    }, [isActive]);
+
+    useEffect(() => {
+
+        // setIndex(0);
+
+        console.log("ff")
 
         setIsShowing(true);
 
-        let intervalId = null;
-        let timeoutId = null;
+        let timeoutId0 = null;
+        let timeoutId1 = null;
+
+        const weight = texts[index].weight;
+
+        console.log("index")
+        console.log(index);
+
+
+        const timeForText = (12500 * weight) - 500;
 
         if (isActive) {
-            intervalId = setInterval(() => {
-                
+            timeoutId0 = setTimeout(() => {
+
                 setIsShowing(false);
-                timeoutId = setTimeout(() => {
+                timeoutId1 = setTimeout(() => {
                     setIsShowing(true);
-                    setIndex(index => index + 1);
+                    setIndex(index => {
+                        if (index >= texts.length) {
+
+                            return 0;
+                        }
+                        return index + 1;
+                    });
                 }, 500)
             },
-                ((7500 / texts.length) - 500)
+                timeForText
             );
         }
 
 
         return () => {
-            clearInterval(intervalId);
-            clearTimeout(timeoutId);
+            clearTimeout(timeoutId0);
+            clearTimeout(timeoutId1);
         };
-    }, [isActive]);
+    }, [index, isActive]);
 
     // useEffect(() => {
 
@@ -134,7 +158,7 @@ const MainMessage = ({ message, isActive }) => {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        {texts[index % texts.length]}
+                        {texts[index % texts.length].value}
                     </Transition>
 
                 </h3>
