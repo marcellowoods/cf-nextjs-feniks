@@ -21,19 +21,30 @@ const MainMessage = ({ message, isActive }) => {
 
     const [index, setIndex] = useState(0);
 
-    useEffect(() => {
-
+    if (index >= texts.length) {
 
         setIndex(0);
+        return (
+            <></>
+        )
+    }
+
+    // useEffect(() => {
 
 
-    }, [isActive]);
+    //     setIndex(0);
+
+
+    // }, [isActive]);
 
     useEffect(() => {
 
         // setIndex(0);
 
-        console.log("ff")
+        if(!isActive){
+            setIndex(0);
+            return;
+        }
 
         setIsShowing(true);
 
@@ -46,26 +57,26 @@ const MainMessage = ({ message, isActive }) => {
         console.log(index);
 
 
-        const timeForText = (12500 * weight) - 500;
+        const timeForText = (8500 * weight) - 500;
 
-        if (isActive) {
-            timeoutId0 = setTimeout(() => {
 
-                setIsShowing(false);
-                timeoutId1 = setTimeout(() => {
-                    setIsShowing(true);
-                    setIndex(index => {
-                        if (index >= texts.length) {
+        timeoutId0 = setTimeout(() => {
 
-                            return 0;
-                        }
-                        return index + 1;
-                    });
-                }, 500)
-            },
-                timeForText
-            );
-        }
+            setIsShowing(false);
+            timeoutId1 = setTimeout(() => {
+                setIsShowing(true);
+                setIndex(index => {
+                    if (index >= texts.length) {
+
+                        return 0;
+                    }
+                    return index + 1;
+                });
+            }, 500)
+        },
+            timeForText
+        );
+
 
 
         return () => {

@@ -52,32 +52,28 @@ const messages = [
     {
         "texts": [
             {
-                value: "Фестивал ЗВЕЗДИ ПОД ЗВЕЗДИТЕ в Раювци",
-                weight: 0.4
-            },
-            {
-                value: "лазерно шоу",
-                weight: 0.1
+                value: "Фестивал ЗВЕЗДИ ПОД ЗВЕЗДИТЕ в Раювци с лазерно шоу",
+                weight: 0.3
             },
             {
                 value: "Краси Радков",
-                weight: 0.1
+                weight: 0.14
             },
             {
                 value: "Миро Каризма",
-                weight: 0.1
+                weight: 0.14
             },
             {
                 value: "Братя Аргирови",
-                weight: 0.1
+                weight: 0.14
             },
             {
                 value: "Нели Петкова",
-                weight: 0.1
+                weight: 0.14
             },
             {
                 value: "ансамбъл Българе",
-                weight: 0.1
+                weight: 0.14
             }
         ],
 
