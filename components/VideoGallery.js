@@ -55,13 +55,20 @@ const VideoGallery = ({ videos }) => {
     return (
         <section className="overflow-hidden text-gray-700 ">
 
-            {videos.slice(0, vidNum).map((videoUrl => (
-                <div key={videoUrl} className="pb-2">
-                    <Video videoUrl={videoUrl} />
-                </div>
-            )))}
+            {videos.slice(0, vidNum).map(((videoUrl, videoIndex) => {
+                let cn = (videoIndex + 1 < videos.length) ? "pb-2" : "";
+                
+                return (
+                    <div key={videoUrl} className={cn} >
+                        <Video videoUrl={videoUrl} />
+                    </div>
+                )
+            }
 
-            {vidNum < videos.length &&
+            ))}
+
+            {
+                vidNum < videos.length &&
                 (
                     <div className="flex flex-col items-center">
                         <button className="h-12 px-6 text-lg text-indigo-100 transition-colors duration-500 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" onClick={handleClick}>
@@ -71,7 +78,7 @@ const VideoGallery = ({ videos }) => {
                 )
             }
 
-        </section>
+        </section >
     )
 }
 

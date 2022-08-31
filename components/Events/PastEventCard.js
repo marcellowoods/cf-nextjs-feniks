@@ -2,6 +2,7 @@ import React from 'react';
 import ImageGallery from '../ImageGallery';
 
 import VideoGallery from '../VideoGallery';
+import Linkify from 'react-linkify';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -78,8 +79,14 @@ const PastEventCard = ({ pastEvent }) => {
                 )}
 
                 {pastEvent.description && (
-                    <p className="mt-3 text-base sm:text-lg ">
-                        {pastEvent.description}
+                    <p className="mt-3 text-base sm:text-lg whitespace-pre-line">
+                        <Linkify componentDecorator={(decoratedHref, decoratedText, key) => (
+                            <a target="blank" className="underline text-teal-300 hover:text-teal-500" href={decoratedHref} key={key}>
+                                {decoratedText}
+                            </a>
+                        )}>
+                            {pastEvent.description}
+                        </Linkify>
                     </p>
                 )}
                 {/* <ArrowIcon className="mt-4" /> */}

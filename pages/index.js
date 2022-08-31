@@ -130,7 +130,7 @@ export default function Home() {
                 <h3 className="text-white font-bold  text-base sm:text-4xl  text-center">разгледайте</h3>
                 <Link href={"/events"}>
 
-                    <h3 className="text-white font-bold text-base sm:text-4xl  underline cursor-pointer text-center">събитията организирани от нас</h3>
+                    <h3 className="text-white font-bold text-base sm:text-4xl  underline cursor-pointer text-center">събитията организирани с нас</h3>
 
                 </Link>
             </div>

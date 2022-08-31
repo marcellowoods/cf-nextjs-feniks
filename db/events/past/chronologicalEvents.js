@@ -108,6 +108,20 @@ const chronologicalEvents = [
             "https://www.youtube.com/watch?v=5Eh5RVEZXIY"
         ]
 
+    },
+
+    {
+        location: "село Раювци",
+        date: { year: 2022, month: 8, day: 27 },
+        description: "Фестивал Раювци 2022 \n лазерно шоу, Краси Радков, Миро Каризма, Братя Аргирови, Нели Петкова и ансамбъл Българе \n организатор Фондация „Звезди под звездите“ \n https://rayuvtsistars.com",
+        images: createImageArray(5, pastEventImageLocation + "/2022-8-27/"),
+        categoryImages: {
+            [CATEGORY_TYPES.koncerti]: createImageArray(5, pastEventImageLocation + "/2022-8-27/"),
+        },
+        videos: [
+            "https://vimeo.com/745030841"
+        ]
+
     }
 
 ].reverse();
