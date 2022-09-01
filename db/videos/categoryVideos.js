@@ -1,7 +1,5 @@
 const categoryVideos = {
     "lazeri": [
-        
-
 
         "https://www.youtube.com/watch?v=iYqoDpUEsnw",
         "https://www.youtube.com/watch?v=gbdYIsYonK0",
@@ -13,8 +11,12 @@ const categoryVideos = {
         "https://www.youtube.com/watch?v=BNnIDDqHcwo",
         "https://www.youtube.com/watch?v=5Eh5RVEZXIY",
 
+
+    ].reverse(),
+
+    "koncerti": [
         "https://vimeo.com/745030841"
-    ].reverse()
+    ]
 };
 
 export default categoryVideos;
