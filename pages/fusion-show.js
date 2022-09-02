@@ -9,7 +9,7 @@ const FusionShow = () => {
     return (
         <PagesLayout>
 
-            <Meta title={"fusion шоу - впечатляващо визуално шоу"} description={"впечатляващо визуално шоу, комбиниращо мултимедийни картини и светлинни ефекти"} />
+            <Meta title={"Fusion шоу"} description={"Впечатляващо визуално шоу, комбиниращо мултимедийни картини и светлинни ефекти"} />
 
             <div className="px-4 pb-10 sm:pt-6 sm:pb-12 sm:px-0 body-font max-w-5xl mx-auto">
                 <h1 className="text-lg sm:text-2xl text-center lh-6 ld-04 font-bold text-white">

@@ -6,7 +6,7 @@ import CategoryMedia from '../components/CategoryMedia';
 const LazernoShow = () => {
     return (
         <PagesLayout>
-            <Meta title={"лазерно шоу"} description={"лазерно шоу, светлинно шоу"} />
+            <Meta title={"Лазерно шоу"} description={"Лазерно шоу, светлинно шоу"} />
             <div>
                 <div className="px-4 pb-10 sm:pt-6 sm:pb-12 body-font mx-auto">
                     <h1 className="text-lg sm:text-2xl text-center lh-6 ld-04 font-bold text-white">

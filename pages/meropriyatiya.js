@@ -9,7 +9,8 @@ const Meropriyatiya = () => {
     return (
         <PagesLayout>
 
-            <Meta title={"организиране на мероприятия - партита, семинари, презентации"} description={"Организиране на различни мероприятия – фирмени партита, DJ-партита, семинари, презентации на открито и закрито"} />
+            <Meta title={"Организиране на мероприятия"} description={"Организиране на събития - фирмени партита, dj партита, семинари, презентации на открито, презентации на закрито"} />
+            
             <div className="px-4 pb-10 sm:pt-6 sm:pb-12 sm:px-0 body-font mx-auto">
                 <h1 className="text-lg sm:text-2xl text-center lh-6 ld-04 font-bold text-white">
                     ОРГАНИЗИРАНЕ НА МЕРОПРИЯТИЯ
@@ -17,7 +18,7 @@ const Meropriyatiya = () => {
             </div>
             <div>
                 <p className="text-base sm:text-lg text-white mb-6">
-                    Организираме различни мероприятия – фирмени партита, DJ-партита, семинари, презентации на открито и закрито.
+                    Организираме различни мероприятия – фирмени партита, dj партита, семинари, презентации на открито и закрито.
                 </p>
 
                 <p className="text-base sm:text-lg text-white mb-6">

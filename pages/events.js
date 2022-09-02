@@ -5,6 +5,7 @@ import FutureEventCard from '../components/Events/FutureEventCard';
 import PastEventCard from '../components/Events/PastEventCard';
 import pastEvents from "../db/events/past/allEvents";
 import futureEvents from "../db/events/future/allEvents";
+import Meta from '../components/Meta';
 
 
 const Events = () => {
@@ -24,6 +25,8 @@ const Events = () => {
 
 
         <PagesLayout>
+
+            <Meta title={"Събития"} description={"Събития организирани от нас"} />
 
             <div className="px-4 pb-10 sm:pt-6 sm:pb-10 sm:px-0 text-gray-600 body-font max-w-5xl mx-auto">
                 <h1 className="text-lg sm:text-2xl text-center  lh-6 ld-04 font-bold text-white">

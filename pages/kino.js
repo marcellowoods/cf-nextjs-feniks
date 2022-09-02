@@ -12,7 +12,7 @@ const Kino = () => {
 
         <PagesLayout>
             
-            <Meta title={"пътуващо кино"} description={"пътуващо кино, най-новите тематично подбрани филми"} />
+            <Meta title={"Пътуващо кино"} description={"Кино на открито, прожекции на филми на открито"} />
 
             <div className="px-4 pb-10 sm:pt-6 sm:pb-12 sm:px-0 text-white body-font mx-auto">
                 <h1 className="text-lg sm:text-2xl text-center lh-6 ld-04 font-bold text-white">

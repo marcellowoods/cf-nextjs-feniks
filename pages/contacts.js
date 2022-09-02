@@ -1,5 +1,6 @@
 import React from 'react'
 import PagesLayout from '../components/PagesLayout';
+import Meta from '../components/Meta';
 
 // import Lasers from '../components/Effects/Lasers/Lasers';
 //for newline add whitespace-pre-line and use inside text {"\n"} 
@@ -11,6 +12,8 @@ const Contacts = () => {
             {/* <Lasers /> */}
 
             <PagesLayout>
+
+                <Meta title={"Контакти"} description={"За връзка с нас"} />
 
                 <div>
 

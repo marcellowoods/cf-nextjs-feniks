@@ -11,7 +11,7 @@ const Koncerti = () => {
     return (
         <PagesLayout>
 
-            <Meta title={"организиране на концерти"} description={"организиране на концерти на открито и закрито по повод различни събития"} />
+            <Meta title={"Организиране на концерти"} description={"Организиране на концерти на открито и закрито"} />
 
             <div className="px-4 pb-10 sm:pt-6 sm:pb-12 sm:px-0 body-font mx-auto">
                 <h1 className="text-lg sm:text-2xl text-center lh-6 ld-04 font-bold text-white">
