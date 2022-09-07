@@ -88,25 +88,25 @@ export default function Home() {
                 <CategoryCard
                     linkRef={"meropriyatiya"}
                     title={"ОРГАНИЗИРАНЕ НА\n МЕРОПРИЯТИЯ"}
-                    description={"фирмени партита,\n DJ-партита,\n семинари,\n презентации на открито и закрито"}
+                    description={"Фирмени партита,\n DJ-партита,\n семинари,\n презентации на открито и закрито"}
                 />
 
                 <CategoryCard
                     linkRef={"koncerti"}
                     title={"КОНЦЕРТИ"}
-                    description={"концерти на открито и закрито\n по повод различни събития и празници"}
+                    description={"Концерти на открито и закрито\n по повод различни събития и празници"}
                 />
 
                 <CategoryCard
                     linkRef={"kino"}
                     title={"ПЪТУВАЩО КИНО"}
-                    description={"показваме най-новите,\n тематично подбрани филми"}
+                    description={"Филмови прожекции на открито \n на най-новите тематично подбрани филми"}
                 />
 
                 <CategoryCard
                     linkRef={"lazerno-show"}
                     title={"ЛАЗЕРНО ШОУ"}
-                    description={"спектакъл с визуални светлинни внушения,\n което разчупва визията на мероприятието"}
+                    description={"Спектакъл с визуални светлинни внушения,\n което разчупва визията на мероприятието"}
                 />
 
 
@@ -116,7 +116,7 @@ export default function Home() {
                 <CategoryCard
                     linkRef={"fusion-show"}
                     title={"FUSION SHOW"}
-                    description={"нов иновативен проект\n на шоу\n непоказвано в България"}
+                    description={"Нов иновативен проект\n на шоу\n непоказвано в България"}
                 />
             </div>
 

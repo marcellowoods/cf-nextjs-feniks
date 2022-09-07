@@ -11,13 +11,19 @@ const Kino = () => {
     return (
 
         <PagesLayout>
-            
-            <Meta title={"Пътуващо кино"} description={"Кино на открито, прожекции на филми на открито"} />
+
+            <Meta title={"Пътуващо кино - Филмови прожекции на открито"} description={"Кинопрожекции на открито на най-новите тематично подбрани филми"} />
 
             <div className="px-4 pb-10 sm:pt-6 sm:pb-12 sm:px-0 text-white body-font mx-auto">
                 <h1 className="text-lg sm:text-2xl text-center lh-6 ld-04 font-bold text-white">
                     ПЪТУВАЩО КИНО
                 </h1>
+
+                <h1 className="text-lg sm:text-2xl text-center lh-6 ld-04 font-bold text-white">
+                    ФИЛМОВИ ПРОЖЕКЦИИ НА ОТКРИТО
+                </h1>
+
+
             </div>
             <div>
                 <p className="text-base sm:text-lg text-white">
@@ -27,14 +33,14 @@ const Kino = () => {
                 </p>
                 <br />
                 <p className="text-base sm:text-lg text-white mb-6">
-                    За 13 години работа по проект “Пътуващо кино” сме реализирали  над 900 кинопрожекции пред над 1 млн.
+                    За 13 години работа по проект “Пътуващо кино” сме реализирали над 900 кинопрожекции пред над 1 млн.
                     зрители. Благодарение подкрепата на много общини в страната, фирми и организации.
                     Нашите прожекции са с “ВХОД СВОБОДЕН” -  на това се дължи голяма част от успеха ни.
-                    На първо място обаче е факта, че показваме най-новите, тематично подбрани филми.
+                    На първо място обаче е факта, че показваме най-новите тематично подбрани филми.
                 </p>
             </div>
-            
-            <CategoryMedia category={"kino"}/>
+
+            <CategoryMedia category={"kino"} />
 
             {/* <VideoGallery videos={categoryVideos["kino"]} /> */}
 
