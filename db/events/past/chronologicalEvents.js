@@ -17,6 +17,7 @@ const createImageArray = (imgsLength, imgsLocation) => {
  * @property {string} location
  * @property {object} date
  * @property {string} description
+ * @property {object} urlsInDescription - key value pair with the text to be replaced in links in the description
  * @property {string[]} images
  * @property {string[]} categoryImages
  * @property {string[]} categoryVideos
@@ -113,7 +114,10 @@ const chronologicalEvents = [
     {
         location: "село Раювци",
         date: { year: 2022, month: 8, day: 27 },
-        description: "Фестивал Раювци 2022 \n лазерно шоу, Краси Радков, Миро Каризма, Братя Аргирови, Нели Петкова и ансамбъл Българе \n организатор Фондация „Звезди под звездите“ \n https://rayuvtsistars.com",
+        description: "Фестивал Раювци 2022 \n лазерно шоу,\n Краси Радков, Миро Каризма, \n Братя Аргирови, Нели Петкова и ансамбъл Българе \n организатор https://rayuvtsistars.com",
+        urlsInDescription: {
+            "https://rayuvtsistars.com": "Фондация „Звезди под звездите“"
+        },
         images: createImageArray(5, pastEventImageLocation + "/2022-8-27/"),
         categoryImages: {
             [CATEGORY_TYPES.koncerti]: createImageArray(5, pastEventImageLocation + "/2022-8-27/"),

@@ -60,6 +60,22 @@ const displayData = (obj) => {
 
 const PastEventCard = ({ pastEvent }) => {
 
+    const renderUrlText = (url) => {
+
+        const { urlsInDescription } = pastEvent;
+
+        if(!urlsInDescription){
+            return url
+        }
+
+        if(urlsInDescription && url in urlsInDescription){
+            return urlsInDescription[url];
+        }
+
+        return url;
+
+    }
+
     return (
         <div
             className="rounded-lg bg-opacity-30 bg-black"
@@ -82,7 +98,7 @@ const PastEventCard = ({ pastEvent }) => {
                     <p className="mt-3 text-base sm:text-lg whitespace-pre-line">
                         <Linkify componentDecorator={(decoratedHref, decoratedText, key) => (
                             <a target="blank" className="underline text-teal-300 hover:text-teal-500" href={decoratedHref} key={key}>
-                                {decoratedText}
+                                {renderUrlText(decoratedText)}
                             </a>
                         )}>
                             {pastEvent.description}
