@@ -88,9 +88,9 @@ const Header = () => {
                                 onKeyDown={ofcanvasHandaler}
                                 className="flex flex-col space-y-1.5 ml-8 lg:hidden"
                             >
-                                <span className="line h-0.5 w-6 inline-block bg-white"></span>
-                                <span className="line h-0.5 w-6 inline-block bg-white"></span>
-                                <span className="line h-0.5 w-6 inline-block bg-white"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
                             </button>
 
                         </div>
