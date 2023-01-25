@@ -14,9 +14,6 @@ const categoryVideos = {
 
     ].reverse(),
 
-    "koncerti": [
-        "https://vimeo.com/745030841"
-    ]
 };
 
 export default categoryVideos;

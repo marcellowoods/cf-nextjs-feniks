@@ -121,10 +121,7 @@ const chronologicalEvents = [
         images: createImageArray(5, pastEventImageLocation + "/2022-8-27/"),
         categoryImages: {
             [CATEGORY_TYPES.koncerti]: createImageArray(5, pastEventImageLocation + "/2022-8-27/"),
-        },
-        videos: [
-            "https://vimeo.com/745030841"
-        ]
+        }
 
     }
 
